@@ -135,7 +135,7 @@ namespace ListaAlumnos
             {
                 return;
             }
-            string path = @"C:\" + nombreArchivo + ".txt";
+            string path = @"C:\Users\yelo\Desktop\" + nombreArchivo + ".txt";
             using (StreamWriter sw = File.CreateText(path))
             {
                 do
@@ -148,7 +148,7 @@ namespace ListaAlumnos
         }
         public void Cargar(string nombreArchivo)
         {
-            string path = @"C:\" + nombreArchivo + ".txt";
+            string path = @"C:\Users\yelo\Desktop\" + nombreArchivo + ".txt";
             if (!File.Exists(path))
             {
                 return;
