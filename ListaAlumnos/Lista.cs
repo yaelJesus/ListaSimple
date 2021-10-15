@@ -148,7 +148,12 @@ namespace ListaAlumnos
         }
         public void Cargar(string nombreArchivo)
         {
-            string[] lineas = File.ReadAllLines(@"c:\" + nombreArchivo + ".txt");
+            string path = @"C:\" + nombreArchivo + ".txt";
+            if (!File.Exists(path))
+            {
+                return;
+            }
+            string[] lineas = File.ReadAllLines(path);
             foreach (string linea in lineas)
             {
                 if (linea.Length == 0)
