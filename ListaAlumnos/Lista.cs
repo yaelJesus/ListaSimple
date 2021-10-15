@@ -140,7 +140,7 @@ namespace ListaAlumnos
             {
                 do
                 {
-                    sw.WriteLine(h.Numero + " - " + h.Nombre + " - " + h.Telefono);
+                    sw.WriteLine(h.Numero + "-" + h.Nombre + "-" + h.Telefono);
                     h = h.Siguiente;
                 } while (h != null);
             }
